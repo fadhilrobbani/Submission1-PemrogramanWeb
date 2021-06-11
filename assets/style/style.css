@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin: auto;
+    overflow-x: hidden;
+    background-color: rgb(209, 225, 238);
+}
+
+#judul{
+    color: rgb(252, 252, 252);
+    font-family: 'Squada One', cursive;
+    font-size: 35px;
+}
+
+header{
+    background-color: rgb(63, 121, 196);
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+nav{
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(2, 2, 2);
+}
+
+.menu-toggle{
+    margin-right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: -6px;
+    top: -4px;
+    opacity: 0;
+    cursor:pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 4px;
+    background-color: aliceblue;
+}
+
+main{
+    padding-top: 52px;
+}
+
+.head{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content:center;
+}
+
+.head div{
+    background-color: rgb(72, 148, 192);
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 40px;
+    color: rgb(255, 255, 255);
+    background-image: url(https://profil.bengkulukota.go.id/wp-content/uploads/2020/01/ddts3.jpg);
+    background-position: center;
+}
+
+.head div img{
+    width: 200px;
+}
+
+.head div p{
+    padding: 20px;
+}
+
+.judul{
+    font-family: 'Squada One', cursive;
+    background-color: rgba(55, 97, 189, 0.637);
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    color: white;
+}
+
+.content #walikota{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card{
+    color: rgb(0, 0, 0);
+    margin: 8px;
+    margin-bottom: 3px;
+    box-shadow: 1px 1px 1px 1px rgba(92, 82, 82, 0.8);
+    background-color: rgb(170, 208, 252);
+}
+
+
+div#walikota table{
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.content #walikota article img{
+    width: 150px;
+}
+
+table[border]{
+    border: none;
+}
+
+div .card{
+    display: flex;
+    padding: 15px;
+    text-align: justify;
+    border: 5px solid rgb(84, 64, 197);
+    color: black;
+    align-items: center;
+    border-radius: 14px;
+}
+
+div .card p{
+    padding: 10px;
+}
+
+div .card img{
+    width: 100%;
+}
+
+.content #wisata{
+    display: flex;
+}
+
+.content #wisata .card{
+    flex-direction: column;
+    
+}
+
+.content #wisata .card img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+aside{
+    display: flex;
+    margin: 7px;
+    justify-content: center;
+    border: 5px solid rgb(84, 64, 197);
+    background-color: rgb(170, 208, 252);
+}
+
+aside img{
+    width: 300px;
+    max-height: 300px;
+    color: black;
+    border-radius: 14px;
+    margin: 10px;
+}
+
+aside table{
+    margin: 10px;
+    border-radius: 14px;
+    text-align: left;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(63, 121, 196);
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    *{
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+    
+
+    nav ul{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        right: 0;
+        top: 50px;
+        padding: auto;
+        background-color: rgba(78, 134, 207, 0.829);
+        width: 100%;
+        height: 50%;
+        justify-content:space-evenly;
+        align-items:center;
+        opacity: 94%;
+        transform: translateX(100%);
+        transition: all 0.4s;
+    }
+    
+    nav ul.slide{
+        transform: translateX(0);
+
+    }
+
+    .head div{
+        font-size: 90%;
+    }
+
+    #judul1{
+        margin-top: 47px;
+    }
+}
+
+@media screen and (max-width: 360px){
+
+    #judul{
+        font-size: 25px;
+    }
+
+    #judul1{
+        margin-top: 50px;
+    }
+
+
+}
+
+
+
